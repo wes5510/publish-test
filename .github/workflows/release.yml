@@ -16,6 +16,12 @@ jobs:
           cache: "yarn"
           registry-url: https://npm.pkg.github.com/
 
+      - name: Restore yarn dependencies cache
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-${{ hashFiles('yarn.lock') }}
+
       - name: Install dependencies
         run: yarn install --check-cache --immutable --immutable-cache
 
