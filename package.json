@@ -1,6 +1,5 @@
 {
   "name": "@wes5501/publish-test",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
