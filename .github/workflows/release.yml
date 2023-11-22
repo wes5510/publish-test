@@ -24,9 +24,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Test
-        run: echo ${{secrets.GITHUB_TOKEN}}
-
       - name: Publish
         run: yarn npm publish
         env:
