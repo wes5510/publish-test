@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PACKAGES_INSTALL_KEY: ${{secrets.GITHUB_TOKEN}}
+    permissions:
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
