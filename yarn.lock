@@ -926,9 +926,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@wes5501/publish-test@workspace:.":
+"@wes5510/publish-test@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@wes5501/publish-test@workspace:."
+  resolution: "@wes5510/publish-test@workspace:."
   dependencies:
     "@types/react": "npm:^18.2.37"
     "@types/react-dom": "npm:^18.2.15"
