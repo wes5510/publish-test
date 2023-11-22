@@ -3,6 +3,7 @@ name: on release
 on:
   release:
     types: [created]
+  workflow_dispatch:
 
 jobs:
   publish-github-registry:
@@ -12,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version-file: .nvmrc
-          cache: yarn
+          cache: "yarn"
           registry-url: https://npm.pkg.github.com/
 
       - name: Install dependencies
